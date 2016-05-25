@@ -1,0 +1,38 @@
+.header {
+    height: 60px;
+    background: red;
+    text-align: center;
+    line-height: 60px;
+    font-size: 36px;
+    color:#fff;
+    opacity: .5;
+    box-sizing: border-box;
+}
+
+.main {
+    width: 800px;
+    height: 800px;
+    margin: 20px auto;
+}
+
+.main li {
+    width: 398px;
+    height: 398px;
+    float: left;
+    background: rgba(255,0,0,.5);
+    border: 1px solid #ddd;
+}
+.main li span{
+    display: inline-block;
+    width: 398px;
+    height: 398px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 398px;
+}
+.main li img {
+    max-width: 398px;
+    max-height: 398px;
+    vertical-align: middle;
+
+}
