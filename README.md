@@ -12,6 +12,8 @@
 
 ###### 方法就是改gulp-rev 和 gulp-rev-collector 两个插件
 
+1. npm install gulp gulp-rev gulp-rev-collector --save-dev 安装插件
+
 1. 打开node_module/gulp-rev/index.js
     - 大约138行处：manifest[originalFile] = revisionedFile;
     - 改为：manifest[originalFile] = originalFile + '?=' + file.revHash;
