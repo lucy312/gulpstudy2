@@ -21,10 +21,6 @@
     - 改为：return filename + ext;
 
 1. 打开node_module/gulp-rev-collector/index.js
-    - 第31行：if ( path.basename(json[key]).replace(new RegExp( opts.revSuffix ), '' ) !==  path.basename(key) ) {
-               isRev = 0;
-              }
-    －改为：if ( path.basename(json[key]).split('?')[0] !==  path.basename(key) ) {
-                    isRev = 0;
-                }
+    - 第31行：if ( path.basename(json[key]).replace(new RegExp( opts.revSuffix ), '' ) !==  path.basename(key) ) { isRev = 0;}
+    －改为：if ( path.basename(json[key]).split('?')[0] !==  path.basename(key) ) { isRev = 0;}
 
